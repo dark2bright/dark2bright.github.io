@@ -1,0 +1,8 @@
+markdown: rdiscount
+pygments: true
+baseurl: http://dark2bright.github.io
+
+name: Quoc-Sang Phan
+description: my blog
+
+

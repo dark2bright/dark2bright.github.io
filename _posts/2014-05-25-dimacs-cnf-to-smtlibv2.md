@@ -28,7 +28,10 @@ Here is an example of a problem in DIMACS-CNF format:
         p cnf 3 2
         1 -3 0
         2 3 -1 0
+
+
 Using the tool I implemented, the problem is converted into a QF_UF formula as follows:
+
 
         ( set-option :produce-models true )
         ( set-logic QF_UF )
@@ -44,4 +47,6 @@ Using the tool I implemented, the problem is converted into a QF_UF formula as f
         
         ( check-sat )
         ( get-model )
+
+
 This formula then can be extended with **push** and **pop** as in SMTLIBv2 standard for incremental solving.
